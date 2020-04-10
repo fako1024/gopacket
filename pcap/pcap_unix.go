@@ -25,6 +25,8 @@ import (
 #cgo solaris LDFLAGS: -L /opt/local/lib -lpcap
 #cgo linux CFLAGS: -I ${SRCDIR}/libpcap
 #cgo linux LDFLAGS: ${SRCDIR}/libpcap/libpcap_linux.a
+#cgo arm CFLAGS: -I ${SRCDIR}/libpcap
+#cgo arm LDFLAGS: ${SRCDIR}/libpcap/libpcap_arm7.a
 #cgo dragonfly LDFLAGS: -lpcap
 #cgo freebsd LDFLAGS: -lpcap
 #cgo openbsd LDFLAGS: -lpcap
